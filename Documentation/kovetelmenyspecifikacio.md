@@ -7,7 +7,7 @@
 Manapság egyre nagyobb az alkalmi játékok népszerűsége, 
 sokan játszanak ilyen játékokkal ha éppen van kedvük, 
 vagy szabadidejük rá. Mi ezt a népszerűséget szeretnénk kihasználni 
-és készíttetni egy olyan android játékot, amelyet bárki, 
+és készíttetni egy olyan mobil játékot, amelyet bárki, 
 bárhol játszhat a telefonján korosztálytól függetlenül.
 A cél egy egyszerű de mégis élvezhető mobil játék kiadása, 
 amely nem igényel hosszú játékidőt, vagy előzetes tapasztalatot.
@@ -22,7 +22,13 @@ csak egy kis szabadidő és a platformnak köszönhetően bárhol lehet játszan
 
 3. Vágyálom rendszer
 
-
+Cégünk szeretne egy olyan mobil játékot kiadni, 
+amellyel elkezdheti terjeszkedését mobil plaformon. 
+A cél egy olyan egyszerű alkalmi mobil játék kiadása, 
+mely nem igényel előzetes tudást vagy tapasztalatot, 
+így akár a teljesen kezdő játékosok is tudnak vele játszani. 
+A játék tematikája egy úgynevezett endless runner lenne, 
+különböző kihívásokkal és egyre nehezedő pályákkal.
 
 4. Jelenlegi üzleti folyamatok modellje
 
