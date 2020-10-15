@@ -14,7 +14,11 @@ amely nem igényel hosszú játékidőt, vagy előzetes tapasztalatot.
 
 2. Jelenlegi helyzet
 
-
+Cégünk szeretne más platformokra is terjeszkedni,
+ezek közül is elsősorban a mobil platformot szeretnénk megcélozni.
+Ennek az egyik legegyszerűbb módját egy alkalmi androidos játék kiadásában látjuk. 
+Egy olyan játékban, amelyhez nem kell sok játékidő vagy akár előzetes tapasztalat, 
+csak egy kis szabadidő és a platformnak köszönhetően bárhol lehet játszani.
 
 3. Vágyálom rendszer
 
