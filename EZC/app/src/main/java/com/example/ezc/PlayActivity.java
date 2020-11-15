@@ -2,15 +2,23 @@ package com.example.ezc;
 
 
 import android.graphics.Point;
+import android.util.Log;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.Window;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GestureDetectorCompat;
+
 import android.os.Bundle;
 
-public class PlayActivity extends AppCompatActivity {
+public class PlayActivity extends AppCompatActivity implements GestureDetector.OnGestureListener {
 
 
     private PlayView playView;
+    private static final String DEBUG_TAG = "Gestures";
+    private GestureDetectorCompat mDetector;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +31,15 @@ public class PlayActivity extends AppCompatActivity {
         getWindowManager().getDefaultDisplay().getSize(point);
         playView = new PlayView(this, point.x, point.y);
         setContentView(playView);
+
+        // Instantiate the gesture detector with the
+        // application context and an implementation of
+        // GestureDetector.OnGestureListener
+        mDetector = new GestureDetectorCompat(this,this);
+        // Set the gesture detector as the double tap
+        // listener.
+        //mDetector.setOnDoubleTapListener(this);
+
     }
 
     @Override
@@ -37,7 +54,50 @@ public class PlayActivity extends AppCompatActivity {
         playView.resume();
     }
 
+    @Override
+    public boolean onTouchEvent(MotionEvent event){
+        if (this.mDetector.onTouchEvent(event)) {
+            return true;
+        }
+        return super.onTouchEvent(event);
+    }
 
+    @Override
+    public boolean onDown(MotionEvent event) {
+        Log.d(DEBUG_TAG,"onDown: " + event.toString());
+        playView.jump();
+        return true;
+    }
+
+    @Override
+    public boolean onFling(MotionEvent event1, MotionEvent event2,
+                           float velocityX, float velocityY) {
+        Log.d(DEBUG_TAG, "onFling: " + event1.toString() + event2.toString());
+        return true;
+    }
+
+    @Override
+    public void onLongPress(MotionEvent event) {
+        Log.d(DEBUG_TAG, "onLongPress: " + event.toString());
+    }
+
+    @Override
+    public boolean onScroll(MotionEvent event1, MotionEvent event2, float distanceX,
+                            float distanceY) {
+        Log.d(DEBUG_TAG, "onScroll: " + event1.toString() + event2.toString());
+        return true;
+    }
+
+    @Override
+    public void onShowPress(MotionEvent event) {
+        Log.d(DEBUG_TAG, "onShowPress: " + event.toString());
+    }
+
+    @Override
+    public boolean onSingleTapUp(MotionEvent event) {
+        Log.d(DEBUG_TAG, "onSingleTapUp: " + event.toString());
+        return true;
+    }
 
 
 

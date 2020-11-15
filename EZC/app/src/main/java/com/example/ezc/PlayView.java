@@ -10,9 +10,9 @@ public class PlayView extends SurfaceView implements Runnable {
     private Thread thread;
     private Background background1,background2;
     private Character character;
-    private boolean isPlaying, isGameOver = false;
-    private int width, height, screenX, screenY;
-    private double speed=1;
+    private boolean isPlaying, isJump = false, isGameOver = false;
+    private int width, height, screenX, screenY, characterMaxY;
+    private double speed=1, jumpspeed = -25;;
     public static float screenRatioX, screenRatioY;
     private PlayActivity playActivity;
     private Obstacles obstacles;
@@ -28,6 +28,8 @@ public class PlayView extends SurfaceView implements Runnable {
 
         screenRatioX = 1920f / screenX;
         screenRatioY = 1080f / screenY;
+
+        characterMaxY = screenY/2 + 120;
 
         background1 = new Background(screenX,screenY,getResources());
         background2 = new Background(screenX,screenY,getResources());
@@ -68,6 +70,20 @@ public class PlayView extends SurfaceView implements Runnable {
             background2.x = screenX;
     }
 
+    if (isJump == true)
+    {
+
+        if ( jumpspeed <= 25)
+        {
+            character.y += jumpspeed;
+            jumpspeed++;
+        }
+        else
+        {
+            isJump = false;
+        }
+
+    }
 /*        if (Rect.intersects(obstacles.getCollisionShape(), character.getCollisionShape())) {
 
             isGameOver = true;
@@ -90,6 +106,14 @@ public class PlayView extends SurfaceView implements Runnable {
             //canvas.drawText(score + "", screenX / 2f, 164, paint);
 
             getHolder().unlockCanvasAndPost(canvas);
+        }
+
+    }
+
+    public void jump() {
+
+        while(isPlaying) {
+            isJump = true;
         }
 
     }
