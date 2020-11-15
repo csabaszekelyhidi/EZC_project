@@ -12,7 +12,7 @@ import androidx.core.view.GestureDetectorCompat;
 
 import android.os.Bundle;
 
-public class PlayActivity extends AppCompatActivity implements GestureDetector.OnGestureListener {
+public class PlayActivity extends AppCompatActivity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
 
 
     private PlayView playView;
@@ -96,6 +96,24 @@ public class PlayActivity extends AppCompatActivity implements GestureDetector.O
     @Override
     public boolean onSingleTapUp(MotionEvent event) {
         Log.d(DEBUG_TAG, "onSingleTapUp: " + event.toString());
+        return true;
+    }
+
+    @Override
+    public boolean onDoubleTap(MotionEvent event) {
+        Log.d(DEBUG_TAG, "onDoubleTap: " + event.toString());
+        return true;
+    }
+
+    @Override
+    public boolean onDoubleTapEvent(MotionEvent event) {
+        Log.d(DEBUG_TAG, "onDoubleTapEvent: " + event.toString());
+        return true;
+    }
+
+    @Override
+    public boolean onSingleTapConfirmed(MotionEvent event) {
+        Log.d(DEBUG_TAG, "onSingleTapConfirmed: " + event.toString());
         return true;
     }
 

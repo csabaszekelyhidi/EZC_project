@@ -3,6 +3,7 @@ package com.example.ezc;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.*;
+import android.util.Log;
 import android.view.SurfaceView;
 
 public class PlayView extends SurfaceView implements Runnable {
@@ -17,6 +18,8 @@ public class PlayView extends SurfaceView implements Runnable {
     private PlayActivity playActivity;
     private Obstacles obstacles;
     private Paint paint;
+
+    private static final String NIMLOG = "NimLog";
 
     public PlayView(PlayActivity playActivity, int screenX, int screenY) {
         super(playActivity);
@@ -70,9 +73,10 @@ public class PlayView extends SurfaceView implements Runnable {
             background2.x = screenX;
     }
 
+    // JUMPING
     if (isJump == true)
     {
-
+        //Log.d(NIMLOG,"NimLOG: isJump = true : "+jumpspeed);
         if ( jumpspeed <= 25)
         {
             character.y += jumpspeed;
@@ -81,9 +85,12 @@ public class PlayView extends SurfaceView implements Runnable {
         else
         {
             isJump = false;
+            jumpspeed = -25;
+            //Log.d(NIMLOG,"NimLOG: isJump = false : "+jumpspeed);
         }
-
     }
+
+    
 /*        if (Rect.intersects(obstacles.getCollisionShape(), character.getCollisionShape())) {
 
             isGameOver = true;
@@ -102,6 +109,10 @@ public class PlayView extends SurfaceView implements Runnable {
 
             canvas.drawBitmap(character.character,character.x,character.y,paint);
 
+            paint.setTextSize(48f);
+            canvas.drawText("points: ",screenX - 300, 100, paint);
+
+
             //for score
             //canvas.drawText(score + "", screenX / 2f, 164, paint);
 
@@ -110,12 +121,11 @@ public class PlayView extends SurfaceView implements Runnable {
 
     }
 
-    public void jump() {
+    public void jump()
+    {
 
-        while(isPlaying) {
-            isJump = true;
-        }
-
+        isJump = true;
+        Log.d(NIMLOG,"NimLOG: onDOWN active");
     }
 
 

@@ -32,6 +32,7 @@ public class Character {
         cheight= 200;
 
         character = Bitmap.createScaledBitmap(character,cwidth,cheight,false);
+        //character = Bitmap.compress(Bitmap.CompressFormat.PNG, 100, character);
 
         x = 64* (int) screenRatioX;
         y = screenY /2;
