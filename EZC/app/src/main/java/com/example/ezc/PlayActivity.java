@@ -65,7 +65,7 @@ public class PlayActivity extends AppCompatActivity implements GestureDetector.O
     @Override
     public boolean onDown(MotionEvent event) {
         Log.d(DEBUG_TAG,"onDown: " + event.toString());
-        playView.jump();
+        //playView.jump();
         return true;
     }
 
@@ -73,6 +73,21 @@ public class PlayActivity extends AppCompatActivity implements GestureDetector.O
     public boolean onFling(MotionEvent event1, MotionEvent event2,
                            float velocityX, float velocityY) {
         Log.d(DEBUG_TAG, "onFling: " + event1.toString() + event2.toString());
+
+
+        if ( Math.abs(velocityX) < Math.abs(velocityY)/2 )
+        {
+            Log.d(DEBUG_TAG, "NimLOG: FLING" + velocityX + velocityY);
+            if ( velocityY < 0 )
+            {
+                playView.jump();
+            }
+            else if ( velocityY > 0 )
+            {
+                playView.goDown();
+            }
+        }
+
         return true;
     }
 
@@ -85,6 +100,8 @@ public class PlayActivity extends AppCompatActivity implements GestureDetector.O
     public boolean onScroll(MotionEvent event1, MotionEvent event2, float distanceX,
                             float distanceY) {
         Log.d(DEBUG_TAG, "onScroll: " + event1.toString() + event2.toString());
+        //Log.d(DEBUG_TAG, "NimLOG: SCROLL" + distanceX + distanceY);
+
         return true;
     }
 

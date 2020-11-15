@@ -11,13 +11,15 @@ public class PlayView extends SurfaceView implements Runnable {
     private Thread thread;
     private Background background1,background2;
     private Character character;
-    private boolean isPlaying, isJump = false, isGameOver = false;
-    private int width, height, screenX, screenY, characterMaxY;
-    private double speed=1, jumpspeed = -25;;
+    private boolean isPlaying, isJump = false, isGoDown = false, isGameOver = false;
+    private int width, height, screenX, screenY;
+    private int points = 0;
+    private double speed=1, jumpspeed = -30;
     public static float screenRatioX, screenRatioY;
     private PlayActivity playActivity;
     private Obstacles obstacles;
     private Paint paint;
+    private Canvas canvas;
 
     private static final String NIMLOG = "NimLog";
 
@@ -31,8 +33,6 @@ public class PlayView extends SurfaceView implements Runnable {
 
         screenRatioX = 1920f / screenX;
         screenRatioY = 1080f / screenY;
-
-        characterMaxY = screenY/2 + 120;
 
         background1 = new Background(screenX,screenY,getResources());
         background2 = new Background(screenX,screenY,getResources());
@@ -63,9 +63,13 @@ public class PlayView extends SurfaceView implements Runnable {
 
 
     private void update(){
-    speed = speed+0.001;
-    background1.x -= 20*screenRatioX+speed;
-    background2.x -= 20*screenRatioX+speed;
+        points++;
+    //speed = speed+0.001;
+    //background1.x -= 10*screenRatioX-speed;
+    //background2.x -= 10*screenRatioX-speed;
+    background1.x -= 8;
+    background2.x -= 8;
+
     if(background1.x + background1.background.getWidth() <0){
         background1.x = screenX;
     }
@@ -77,7 +81,7 @@ public class PlayView extends SurfaceView implements Runnable {
     if (isJump == true)
     {
         //Log.d(NIMLOG,"NimLOG: isJump = true : "+jumpspeed);
-        if ( jumpspeed <= 25)
+        if ( jumpspeed <= 30)
         {
             character.y += jumpspeed;
             jumpspeed++;
@@ -85,12 +89,31 @@ public class PlayView extends SurfaceView implements Runnable {
         else
         {
             isJump = false;
-            jumpspeed = -25;
+            jumpspeed = -30;
             //Log.d(NIMLOG,"NimLOG: isJump = false : "+jumpspeed);
         }
     }
 
-    
+        // GOING DOWN
+        if (isGoDown == true)
+        {
+            //Log.d(NIMLOG,"NimLOG: isJump = true : "+jumpspeed);
+            if ( jumpspeed <= 30)
+            {
+                if ( jumpspeed % 2 == 0 ) {
+
+                    character.y -= jumpspeed;
+                }
+                jumpspeed++;
+            }
+            else
+            {
+                isGoDown = false;
+                jumpspeed = -30;
+                //Log.d(NIMLOG,"NimLOG: isJump = false : "+jumpspeed);
+            }
+        }
+
 /*        if (Rect.intersects(obstacles.getCollisionShape(), character.getCollisionShape())) {
 
             isGameOver = true;
@@ -101,16 +124,16 @@ public class PlayView extends SurfaceView implements Runnable {
 
     private void draw(){
         if(getHolder().getSurface().isValid()){
-            Canvas canvas = getHolder().lockCanvas();
-
+            canvas = getHolder().lockCanvas();
             canvas.drawBitmap(background1.background, background1.x, background1.y, paint);
-
             canvas.drawBitmap(background2.background, background2.x, background2.y, paint);
 
             canvas.drawBitmap(character.character,character.x,character.y,paint);
 
+            canvas.drawCircle(background2.x, character.y, 80, paint);
+
             paint.setTextSize(48f);
-            canvas.drawText("points: ",screenX - 300, 100, paint);
+            canvas.drawText("points: "+points,screenX - 400, 100, paint);
 
 
             //for score
@@ -123,11 +146,18 @@ public class PlayView extends SurfaceView implements Runnable {
 
     public void jump()
     {
-
-        isJump = true;
-        Log.d(NIMLOG,"NimLOG: onDOWN active");
+        if (isGoDown == false) {
+            isJump = true;
+        }
+        Log.d(NIMLOG,"NimLOG: jump() called");
     }
-
+    public void goDown()
+    {
+        if (isJump == false) {
+            isGoDown = true;
+        }
+        Log.d(NIMLOG,"NimLOG: goDown() called");
+    }
 
     private void sleep(){
         try {
