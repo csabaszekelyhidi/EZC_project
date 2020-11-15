@@ -26,4 +26,8 @@ Cégünkkel szeretnénk létrehozni egy olyan bármikor, bárhol könnyen előka
 ---
 ### 4. Jelenlegi üzleti folyamatok modellje
 
-
+- A Cég feltölti az alkalmazását a Google Play Store-ba
+- A Play Store-ból a felhasználók letölthetik az alkalmazást
+- A Cég hirdetéseket jelenít meg a játékon belül
+- A hirdetésekre való kattintásból a Cég bevételhez jut
+- A hirdetésből befolyó összeg 30%-át a Google Play jutalékként levonja
