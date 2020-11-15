@@ -15,7 +15,7 @@ bárhol vagy bármikor játszható, akár rövidebb ideig is.
 
 2. Jelenlegi helyzet
 
-
+2020 első negyedévében 16,7 milliárd dollárt kölöttek mobil játékokra. Az okostelefon használata megkerülhetetlenné vált, egyre szélesebb közönség tölt egyre több időt a mobilok képernyője előtt. A mobiltelefon mára már nem csak kapcsolattartási funkciót lát el, hanem ezen akár dolgozunk és játszunk is. Nagy a kereslet az úgynevezett "casual" játékokra, melyek nem igényelnek hosszú játékidőt, könnyű beletanulni és bármikor játszható.
 
 3. Vágyálom rendszer
 
