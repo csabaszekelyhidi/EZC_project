@@ -11,7 +11,7 @@ import static com.example.ezc.PlayView.screenRatioY;
 public class Character {
 
     Bitmap character, dead;
-    private int cwidth, cheight;
+    int cwidth, cheight;
     int x,y;
     private PlayView playView;
 

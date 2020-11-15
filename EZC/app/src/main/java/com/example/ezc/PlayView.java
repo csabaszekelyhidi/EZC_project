@@ -6,6 +6,8 @@ import android.graphics.*;
 import android.util.Log;
 import android.view.SurfaceView;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 public class PlayView extends SurfaceView implements Runnable {
 
     private Thread thread;
@@ -14,12 +16,14 @@ public class PlayView extends SurfaceView implements Runnable {
     private boolean isPlaying, isJump = false, isGoDown = false, isGameOver = false;
     private int width, height, screenX, screenY;
     private int points = 0;
-    private double speed=1, jumpspeed = -30;
+    private double speed=0, jumpspeed = -30;
     public static float screenRatioX, screenRatioY;
     private PlayActivity playActivity;
     private Obstacles obstacles;
     private Paint paint;
     private Canvas canvas;
+
+    private int o1X=-50, o1Y=-50, o2X=-50, o2Y=-50;
 
     private static final String NIMLOG = "NimLog";
 
@@ -38,6 +42,7 @@ public class PlayView extends SurfaceView implements Runnable {
         background2 = new Background(screenX,screenY,getResources());
         character = new Character(this,screenY,getResources());
         paint = new Paint();
+        paint.setColor(Color.RED);
 
 /*      forScore
         paint.setTextSize(128);
@@ -53,22 +58,44 @@ public class PlayView extends SurfaceView implements Runnable {
     @Override
     public void run() {
 
-        while(isPlaying) {
-            update();
-            draw();
-            sleep();
+        while(isPlaying)
+        {
+            if ( isGameOver() == false )
+            {
+                update();
+                draw();
+                sleep();
+            }
+
         }
 
     }
 
 
-    private void update(){
+    private void update()
+    {
         points++;
+        speed = (int) points / 500;
     //speed = speed+0.001;
     //background1.x -= 10*screenRatioX-speed;
     //background2.x -= 10*screenRatioX-speed;
-    background1.x -= 8;
-    background2.x -= 8;
+    background1.x -= 8+speed;
+    background2.x -= 8+speed;
+
+    if ( o1X > -50 )
+    {
+        o1X -= 12+speed*2;
+    }
+    else {
+        generateObject(1);
+    }
+    if ( o2X > -50 )
+    {
+        o2X -= 12+speed*2;
+    }
+    else {
+        generateObject(2);
+    }
 
     if(background1.x + background1.background.getWidth() <0){
         background1.x = screenX;
@@ -130,10 +157,12 @@ public class PlayView extends SurfaceView implements Runnable {
 
             canvas.drawBitmap(character.character,character.x,character.y,paint);
 
-            canvas.drawCircle(background2.x, character.y, 80, paint);
+            canvas.drawCircle(o1X, o1Y, 80, paint);
+            canvas.drawCircle(o2X, o2Y, 50, paint);
 
             paint.setTextSize(48f);
             canvas.drawText("points: "+points,screenX - 400, 100, paint);
+            canvas.drawText("level: "+speed,200, 100, paint);
 
 
             //for score
@@ -159,6 +188,19 @@ public class PlayView extends SurfaceView implements Runnable {
         Log.d(NIMLOG,"NimLOG: goDown() called");
     }
 
+    public void generateObject( int ball )
+    {
+        if ( ball == 1 ) {
+            o1X = screenX + ThreadLocalRandom.current().nextInt(0,screenX/2);
+            o1Y = screenY / 2 + ThreadLocalRandom.current().nextInt(-250,250);
+        }
+        else if ( ball == 2 ) {
+            o2X = o1X + ThreadLocalRandom.current().nextInt(screenX/2,screenX);
+            o2Y = screenY / 2 + ThreadLocalRandom.current().nextInt(-250,250);
+        }
+
+    }
+
     private void sleep(){
         try {
             Thread.sleep(10);
@@ -182,5 +224,21 @@ public class PlayView extends SurfaceView implements Runnable {
         isPlaying = true;
         thread = new Thread(this);
         thread.start();
+    }
+
+    public boolean isGameOver()
+    {
+        int sizeX = character.x + character.cwidth;
+        int sizeY = character.y + character.cwidth;
+        if (character.x < o1X+80 && sizeX > o1X-80 && character.y < o1Y+80 && sizeY > o1Y-80 )
+        {
+            isGameOver = true;
+        }
+        if (character.x < o2X+50 && sizeX > o2X-50 && character.y < o2Y+50 && sizeY > o2Y-50 )
+        {
+            isGameOver = true;
+        }
+
+        return isGameOver;
     }
 }
