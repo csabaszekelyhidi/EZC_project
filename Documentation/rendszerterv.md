@@ -15,8 +15,8 @@ Napjainkban egyre többen használnak mobil okoseszközöket, a 2020-as pandémi
 * Szilágyi Ede
 
 #### Fontosabb határidők:
-* 2020. 11. 16. - Játék demó és bemutató
-* 2020. 12. 07. - Játék átadása és végső értékelés
+* 2020-11-16 : Játék demó és bemutató
+* 2020-12-07 : Játék átadása és végső értékelés
 
 ---
 ### 3. Követelmények
