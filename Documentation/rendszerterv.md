@@ -27,6 +27,8 @@ Napjainkban egyre többen használnak mobil okoseszközöket, a 2020-as pandémi
 ---
 ### 5. Telepítési terv
 
+A felhasználó a játékot a Google Play Store-ból tudja majd telepíteni Android rendszerű okostelefonjára. Ehhez csak egy Google accountra és a játék méretének megfelelő szabad tárhelyre lesz szüksége.
+
 ---
 ### 6. Karbantartási terv
 
