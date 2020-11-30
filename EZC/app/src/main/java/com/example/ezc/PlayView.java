@@ -38,8 +38,8 @@ public class PlayView extends SurfaceView implements Runnable {
         screenRatioX = 1920f / screenX;
         screenRatioY = 1080f / screenY;
 
-        background1 = new Background(screenX,screenY,getResources());
-        background2 = new Background(screenX,screenY,getResources());
+        background1 = new Background(5000,1000,getResources());
+        background2 = new Background(5000,1000,getResources());
         character = new Character(this,screenY,getResources());
         paint = new Paint();
         paint.setColor(Color.RED);
@@ -49,7 +49,7 @@ public class PlayView extends SurfaceView implements Runnable {
         paint.setColor(Color.WHITE);*/
 
         obstacles = new Obstacles(getResources());
-        background2.x = screenX;
+        background2.x = background2.background.getWidth();
         character.x = character.x +200;
 
 
@@ -97,11 +97,13 @@ public class PlayView extends SurfaceView implements Runnable {
         generateObject(2);
     }
 
-    if(background1.x + background1.background.getWidth() <0){
-        background1.x = screenX;
+    if(background1.x + background1.background.getWidth() <= 0)
+    {
+        background1.x = background2.x + background2.background.getWidth();
     }
-    if (background2.x + background2.background.getWidth() < 0) {
-            background2.x = screenX;
+    if (background2.x + background2.background.getWidth() <= 0)
+    {
+        background2.x = background1.x + background1.background.getWidth();
     }
 
     // JUMPING
@@ -110,8 +112,8 @@ public class PlayView extends SurfaceView implements Runnable {
         //Log.d(NIMLOG,"NimLOG: isJump = true : "+jumpspeed);
         if ( jumpspeed <= 30)
         {
-            character.y += jumpspeed;
-            jumpspeed++;
+            character.y += jumpspeed*2;
+            jumpspeed+=2;
         }
         else
         {
@@ -152,17 +154,19 @@ public class PlayView extends SurfaceView implements Runnable {
     private void draw(){
         if(getHolder().getSurface().isValid()){
             canvas = getHolder().lockCanvas();
+
             canvas.drawBitmap(background1.background, background1.x, background1.y, paint);
             canvas.drawBitmap(background2.background, background2.x, background2.y, paint);
 
             canvas.drawBitmap(character.character,character.x,character.y,paint);
+            canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.OVERLAY);
 
             canvas.drawCircle(o1X, o1Y, 80, paint);
             canvas.drawCircle(o2X, o2Y, 50, paint);
 
             paint.setTextSize(48f);
-            canvas.drawText("points: "+points,screenX - 400, 100, paint);
-            canvas.drawText("level: "+speed,200, 100, paint);
+            canvas.drawText("points: "+screenX,screenX - 400, 100, paint);
+            canvas.drawText("level: "+screenY,200, 100, paint);
 
 
             //for score
@@ -239,6 +243,6 @@ public class PlayView extends SurfaceView implements Runnable {
             isGameOver = true;
         }
 
-        return isGameOver;
+        return false;
     }
 }

@@ -3,6 +3,7 @@ package com.example.ezc;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.Rect;
 
 import static com.example.ezc.PlayView.screenRatioX;
@@ -21,21 +22,21 @@ public class Character {
 
         this.playView = playView;
 
-        character = BitmapFactory.decodeResource(res, R.drawable.circle);
+        character = BitmapFactory.decodeResource(res, R.drawable.chicken);
 
         cwidth = character.getWidth();
         cheight = character.getHeight();
 
         cwidth = (int) ( cwidth * screenRatioX);
         cheight = (int) ( cheight * screenRatioY);
-        cwidth= 200;
-        cheight= 200;
+        cwidth= 220;
+        cheight= 220;
 
         character = Bitmap.createScaledBitmap(character,cwidth,cheight,false);
         //character = Bitmap.compress(Bitmap.CompressFormat.PNG, 100, character);
 
         x = 64* (int) screenRatioX;
-        y = screenY /2;
+        y = screenY  /2 + 60;
 
     }
 

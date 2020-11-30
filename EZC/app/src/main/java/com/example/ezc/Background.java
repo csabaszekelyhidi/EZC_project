@@ -13,7 +13,7 @@ public class Background {
 
 
 
-        background = BitmapFactory.decodeResource(resources, R.drawable.bg_ezc);
+        background = BitmapFactory.decodeResource(resources, R.drawable.background_lowres);
         background = Bitmap.createScaledBitmap(background, screenX, screenY, false);
 
 
