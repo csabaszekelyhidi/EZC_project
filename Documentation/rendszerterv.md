@@ -17,3 +17,16 @@ Napjainkban egyre többen használnak mobil okoseszközöket, a 2020-as pandémi
 #### Fontosabb határidők:
 * 2020. 11. 16. - Játék demó és bemutató
 * 2020. 12. 07. - Játék átadása és végső értékelés
+
+---
+### 3. Követelmények
+
+---
+### 4. Teszt terv
+
+---
+### 5. Telepítési terv
+
+---
+### 6. Karbantartási terv
+
