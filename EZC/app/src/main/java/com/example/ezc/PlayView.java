@@ -1,11 +1,10 @@
 package com.example.ezc;
 
-import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.*;
 import android.util.Log;
 import android.view.SurfaceView;
 
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class PlayView extends SurfaceView implements Runnable {
@@ -19,9 +18,12 @@ public class PlayView extends SurfaceView implements Runnable {
     private double speed=0, jumpspeed = -30;
     public static float screenRatioX, screenRatioY;
     private PlayActivity playActivity;
-    private Obstacles obstacles;
+    private Obstacles obstacle1, obstacle2;
     private Paint paint;
     private Canvas canvas;
+
+    private double inAir;
+    private int inAir_speed, r = 600;
 
     private int o1X=-50, o1Y=-50, o2X=-50, o2Y=-50;
 
@@ -48,7 +50,9 @@ public class PlayView extends SurfaceView implements Runnable {
         paint.setTextSize(128);
         paint.setColor(Color.WHITE);*/
 
-        obstacles = new Obstacles(getResources());
+        obstacle1 = new Obstacles(getResources(), 1);
+        obstacle2 = new Obstacles(getResources(), 2);
+
         background2.x = background2.background.getWidth();
         character.x = character.x +200;
 
@@ -60,7 +64,7 @@ public class PlayView extends SurfaceView implements Runnable {
 
         while(isPlaying)
         {
-            if ( isGameOver() == false )
+            if ( isGameOver == false )
             {
                 update();
                 draw();
@@ -76,97 +80,113 @@ public class PlayView extends SurfaceView implements Runnable {
     {
         points++;
         speed = (int) points / 500;
-    //speed = speed+0.001;
-    //background1.x -= 10*screenRatioX-speed;
-    //background2.x -= 10*screenRatioX-speed;
-    background1.x -= 8+speed;
-    background2.x -= 8+speed;
+        background1.x -= 12+speed;
+        background2.x -= 12+speed;
 
-    if ( o1X > -50 )
-    {
-        o1X -= 12+speed*2;
-    }
-    else {
-        generateObject(1);
-    }
-    if ( o2X > -50 )
-    {
-        o2X -= 12+speed*2;
-    }
-    else {
-        generateObject(2);
-    }
+        if ( obstacle1.x + obstacle1.cwidth <= 0 )
+        {
+            obstacle1.x = screenX + ThreadLocalRandom.current().nextInt(0,screenX);
+            switch (ThreadLocalRandom.current().nextInt(0,1000) % 3 )
+            {
+                case 0:
+                case 1: obstacle1.y = screenY / 2 + 80; break;
+                case 2: obstacle1.y = screenY / 2 + 320; break;
+            }
+        }
+        else
+        {
+            obstacle1.x -= 12+speed;
+        }
+        if ( obstacle2.x + obstacle2.cwidth <= 0 )
+        {
+            obstacle2.x = screenX + ThreadLocalRandom.current().nextInt(0,screenX);
+            obstacle2.y = screenY / 2 -
+                    ThreadLocalRandom.current().nextInt(100-((int)speed*3),screenY/2-100-((int)speed*10));
+        }
+        else
+        {
+            obstacle2.x -= 14+speed;
+        }
 
-    if(background1.x + background1.background.getWidth() <= 0)
-    {
-        background1.x = background2.x + background2.background.getWidth();
-    }
-    if (background2.x + background2.background.getWidth() <= 0)
-    {
-        background2.x = background1.x + background1.background.getWidth();
-    }
+
+
+        if(background1.x + background1.background.getWidth() <= 0)
+        {
+            background1.x = background2.x + background2.background.getWidth();
+        }
+        if (background2.x + background2.background.getWidth() <= 0)
+        {
+            background2.x = background1.x + background1.background.getWidth();
+        }
 
     // JUMPING
     if (isJump == true)
     {
-        //Log.d(NIMLOG,"NimLOG: isJump = true : "+jumpspeed);
-        if ( jumpspeed <= 30)
+        if (inAir >= -400 && inAir <= 400)
         {
-            character.y += jumpspeed*2;
-            jumpspeed+=2;
+            character.y = (screenY/2 + 60 +1341) - (int) Math.sqrt((r*r)-(inAir*inAir))*3;
+            inAir += inAir_speed;
+
+            //Log.d(NIMLOG,"NimLOG: inAir="+inAir+" y="+character.y);
         }
         else
         {
+            character.y = screenY/2 + 60;
+            //Log.d(NIMLOG,"NimLOG: inAir="+inAir+" y="+character.y);
             isJump = false;
-            jumpspeed = -30;
-            //Log.d(NIMLOG,"NimLOG: isJump = false : "+jumpspeed);
         }
-    }
 
+    }
         // GOING DOWN
         if (isGoDown == true)
         {
-            //Log.d(NIMLOG,"NimLOG: isJump = true : "+jumpspeed);
-            if ( jumpspeed <= 30)
+            if (inAir >= -400 && inAir <= 400)
             {
-                if ( jumpspeed % 2 == 0 ) {
+                character.y = (screenY/2 + 60 - 670) + (int) (Math.sqrt((r*r)-(inAir*inAir))*(1.5));
+                inAir += inAir_speed;
 
-                    character.y -= jumpspeed;
-                }
-                jumpspeed++;
+                Log.d(NIMLOG,"NimLOG: inAir="+inAir+" y="+character.y);
             }
             else
             {
+                character.y = screenY/2 + 60;
+                //Log.d(NIMLOG,"NimLOG: inAir="+inAir+" y="+character.y);
                 isGoDown = false;
-                jumpspeed = -30;
-                //Log.d(NIMLOG,"NimLOG: isJump = false : "+jumpspeed);
             }
+
         }
 
-/*        if (Rect.intersects(obstacles.getCollisionShape(), character.getCollisionShape())) {
-
+        if (character.getCollisionShape().intersect(obstacle1.getCollisionShape()) ||
+                character.getCollisionShape().intersect(obstacle2.getCollisionShape()) )
+        {
+            //Log.d(NIMLOG,"NimLOG: COLLOSION ");
             isGameOver = true;
-            //go to the result activity if need
-        }*/
+        }
 
     }
 
-    private void draw(){
+    private void draw()
+    {
         if(getHolder().getSurface().isValid()){
             canvas = getHolder().lockCanvas();
 
             canvas.drawBitmap(background1.background, background1.x, background1.y, paint);
             canvas.drawBitmap(background2.background, background2.x, background2.y, paint);
 
-            canvas.drawBitmap(character.character,character.x,character.y,paint);
-            canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.OVERLAY);
+            canvas.drawBitmap(obstacle1.obstacle, obstacle1.x, obstacle1.y, paint);
+            canvas.drawBitmap(obstacle2.obstacle, obstacle2.x, obstacle2.y, paint);
 
-            canvas.drawCircle(o1X, o1Y, 80, paint);
-            canvas.drawCircle(o2X, o2Y, 50, paint);
+            canvas.drawBitmap(character.character,character.x,character.y,paint);
+            //canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.OVERLAY);
+
+
+
+            //canvas.drawCircle(o1X, o1Y, 80, paint);
+            //canvas.drawCircle(o2X, o2Y, 50, paint);
 
             paint.setTextSize(48f);
-            canvas.drawText("points: "+screenX,screenX - 400, 100, paint);
-            canvas.drawText("level: "+screenY,200, 100, paint);
+            canvas.drawText("points: "+points,screenX - 400, 100, paint);
+            canvas.drawText("level: "+speed,200, 100, paint);
 
 
             //for score
@@ -181,6 +201,8 @@ public class PlayView extends SurfaceView implements Runnable {
     {
         if (isGoDown == false) {
             isJump = true;
+            inAir = -400;
+            inAir_speed = (int) (12 + speed);
         }
         Log.d(NIMLOG,"NimLOG: jump() called");
     }
@@ -188,24 +210,14 @@ public class PlayView extends SurfaceView implements Runnable {
     {
         if (isJump == false) {
             isGoDown = true;
+            inAir = -400;
+            inAir_speed = (int) (12 + speed);
         }
         Log.d(NIMLOG,"NimLOG: goDown() called");
     }
 
-    public void generateObject( int ball )
+    private void sleep()
     {
-        if ( ball == 1 ) {
-            o1X = screenX + ThreadLocalRandom.current().nextInt(0,screenX/2);
-            o1Y = screenY / 2 + ThreadLocalRandom.current().nextInt(-250,250);
-        }
-        else if ( ball == 2 ) {
-            o2X = o1X + ThreadLocalRandom.current().nextInt(screenX/2,screenX);
-            o2Y = screenY / 2 + ThreadLocalRandom.current().nextInt(-250,250);
-        }
-
-    }
-
-    private void sleep(){
         try {
             Thread.sleep(10);
         } catch (InterruptedException e) {

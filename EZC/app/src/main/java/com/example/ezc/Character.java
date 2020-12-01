@@ -24,13 +24,13 @@ public class Character {
 
         character = BitmapFactory.decodeResource(res, R.drawable.chicken);
 
-        cwidth = character.getWidth();
-        cheight = character.getHeight();
+        cwidth = character.getWidth()/3;
+        cheight = character.getHeight()/3;
 
-        cwidth = (int) ( cwidth * screenRatioX);
-        cheight = (int) ( cheight * screenRatioY);
-        cwidth= 220;
-        cheight= 220;
+        //cwidth = (int) ( cwidth * screenRatioX);
+        //cheight = (int) ( cheight * screenRatioY);
+        //cwidth= 220;
+        //cheight= 220;
 
         character = Bitmap.createScaledBitmap(character,cwidth,cheight,false);
         //character = Bitmap.compress(Bitmap.CompressFormat.PNG, 100, character);
@@ -42,6 +42,6 @@ public class Character {
 
     Rect getCollisionShape() {
 
-        return new Rect(x,y,x+cwidth, y+cheight);
+        return new Rect(x+40,y+20,x+cwidth-40, y+cheight-20);
     }
 }
