@@ -75,7 +75,7 @@ public class PlayActivity extends AppCompatActivity implements GestureDetector.O
         Log.d(DEBUG_TAG, "onFling: " + event1.toString() + event2.toString());
 
 
-        if ( Math.abs(velocityX) < Math.abs(velocityY)/2 )
+        if ( Math.abs(velocityX) < Math.abs(velocityY)/1.5 )
         {
             Log.d(DEBUG_TAG, "NimLOG: FLING" + velocityX + velocityY);
             if ( velocityY < 0 )

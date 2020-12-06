@@ -12,7 +12,7 @@ public class PlayView extends SurfaceView implements Runnable {
     private Thread thread;
     private Background background1,background2;
     private Character character;
-    private boolean isPlaying, isJump = false, isGoDown = false, isGameOver = false;
+    private boolean isPlaying, isJump = false, isGoDown = false, isGameOver = false, goUp = false;
     private int width, height, screenX, screenY;
     private int points = 0;
     private double speed=0, jumpspeed = -30;
@@ -138,9 +138,53 @@ public class PlayView extends SurfaceView implements Runnable {
 
     }
         // GOING DOWN
-        if (isGoDown == true)
+        /*if (isGoDown == true)
         {
-            if (inAir >= -400 && inAir <= 400)
+            if (inAir >= -400 && inAir < 0)
+            {
+                character.y = (screenY/2 + 60 - 670) + (int) (Math.sqrt((r*r)-(inAir*inAir))*(1.5));
+                inAir += inAir_speed;
+
+                Log.d(NIMLOG,"NimLOG: inAir="+inAir+" y="+character.y);
+            } else
+            {
+                character.y = screenY/2 + 60;
+                //Log.d(NIMLOG,"NimLOG: inAir="+inAir+" y="+character.y);
+                isGoDown = false;
+            }
+        }*/
+        // GOING DOWN
+        if (isGoDown == true && goUp == false)
+        {
+            if (inAir >= -400 && inAir < 0)
+            {
+                character.y = (screenY/2 + 60 - 670) + (int) (Math.sqrt((r*r)-(inAir*inAir))*(1.5));
+                if ( inAir + inAir_speed <= 0 )
+                {
+                    inAir += inAir_speed;
+                } else
+                {
+                    inAir = 0;
+                }
+                Log.d(NIMLOG,"NimLOG: inAir="+inAir+" y="+character.y);
+            }
+        } else if (isGoDown == true && goUp == true)
+        {
+            if (inAir >= 0 && inAir < 400)
+            {
+                character.y = (screenY/2 + 60 - 670) + (int) (Math.sqrt((r*r)-(inAir*inAir))*(1.5));
+                inAir += inAir_speed;
+                Log.d(NIMLOG,"NimLOG: inAir="+inAir+" y="+character.y);
+            } else
+            {
+                character.y = screenY/2 + 60;
+                //Log.d(NIMLOG,"NimLOG: inAir="+inAir+" y="+character.y);
+                isGoDown = false;
+                goUp = false;
+            }
+            // GOING UP
+            /*
+            if (inAir >= -400 && inAir < 0)
             {
                 character.y = (screenY/2 + 60 - 670) + (int) (Math.sqrt((r*r)-(inAir*inAir))*(1.5));
                 inAir += inAir_speed;
@@ -152,8 +196,7 @@ public class PlayView extends SurfaceView implements Runnable {
                 character.y = screenY/2 + 60;
                 //Log.d(NIMLOG,"NimLOG: inAir="+inAir+" y="+character.y);
                 isGoDown = false;
-            }
-
+            }*/
         }
 
         if (character.getCollisionShape().intersect(obstacle1.getCollisionShape()) ||
@@ -199,10 +242,15 @@ public class PlayView extends SurfaceView implements Runnable {
 
     public void jump()
     {
-        if (isGoDown == false) {
+        if (isGoDown == false)
+        {
             isJump = true;
             inAir = -400;
             inAir_speed = (int) (12 + speed);
+        }
+        else if ( goUp == false )
+        {
+            goUp = true;
         }
         Log.d(NIMLOG,"NimLOG: jump() called");
     }

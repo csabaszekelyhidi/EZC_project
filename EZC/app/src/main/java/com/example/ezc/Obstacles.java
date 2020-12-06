@@ -58,7 +58,7 @@ public class Obstacles
 
     Rect getCollisionShape() {
 
-        return new Rect(x+10,y+10,x+cwidth-10, y+cheight-10);
+        return new Rect(x+10,y+20,x+cwidth-100, y+cheight-20);
     }
 }
 
