@@ -31,3 +31,36 @@ Cégünkkel szeretnénk létrehozni egy olyan bármikor, bárhol könnyen előka
 - A Cég hirdetéseket jelenít meg a játékon belül
 - A hirdetésekre való kattintásból a Cég bevételhez jut
 - A hirdetésből befolyó összeg 30%-át a Google Play jutalékként levonja
+
+---
+### 5. Igényelt üzleti folyamatok modellje  
+
+Az alkalmazás célja, hogy egy fajta szórakozást biztosítson a felhasználói számára.  
+
+Üzleti szereplő és munkatárs elemzése:  
+
+  -Üzleti szereplők:  
+
+    -Felhasználók (akiknek készül az alkalmazás)  
+    -Tesztelők (akik tesztelik az alkalmazást a kiadás előtt)  
+    
+  -Üzleti munkatársak:  
+    -Fejlesztők (akik az alkalmazás fejlesztését végzik)  
+    -Vezető  
+    
+Üzleti folyamat elemzése:  
+
+-Lehetőségek felmérése (felmérni, hogy milyen igényei vannak a hasonló alkalmazásokat használó felhasználóknak)  
+-Alkalmazás hirdetése (az alkalmazás népszerűsítése médián keresztül)  
+-Könnyű és érthető használat (könnyű és érthető használhatóság fontos a felhasználók számára)  
+
+Üzleti entitás elemzése:  
+
+-Reklám (alkalmazás népszerűsítése, így több emberhez eljuthat)  
+-Pénz (bevétel az alkalmazás megvásárlásából)  
+
+Üzleti folyamatok modellezése:  
+A leendő felhasználó értesül az alkalmazásról -> Megvásárolja és letölti -> Ha megfelelőnek találja, akkor használja.
+    
+
+
