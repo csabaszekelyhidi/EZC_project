@@ -35,7 +35,7 @@ különböző kihívásokkal és egyre nehezedő pályákkal.
 ---
 ### 4. Jelenlegi üzleti folyamatok modellje
     
-Üzleti szereplők:  
+Üzleti szereplők:   
     -Felhasználók  
     -Tesztelők  
     -Fejlesztők  
