@@ -45,22 +45,24 @@ Az alkalmazás célja, hogy egy fajta szórakozást biztosítson a felhasználó
     -Tesztelők (akik tesztelik az alkalmazást a kiadás előtt)  
     
   -Üzleti munkatársak:  
+  
     -Fejlesztők (akik az alkalmazás fejlesztését végzik)  
     -Vezető  
     
 Üzleti folyamat elemzése:  
 
--Lehetőségek felmérése (felmérni, hogy milyen igényei vannak a hasonló alkalmazásokat használó felhasználóknak)  
--Alkalmazás hirdetése (az alkalmazás népszerűsítése médián keresztül)  
--Könnyű és érthető használat (könnyű és érthető használhatóság fontos a felhasználók számára)  
+    -Lehetőségek felmérése (felmérni, hogy milyen igényei vannak a hasonló alkalmazásokat használó felhasználóknak)  
+    -Alkalmazás hirdetése (az alkalmazás népszerűsítése médián keresztül)  
+    -Könnyű és érthető használat (könnyű és érthető használhatóság fontos a felhasználók számára)  
 
 Üzleti entitás elemzése:  
 
--Reklám (alkalmazás népszerűsítése, így több emberhez eljuthat)  
--Pénz (bevétel az alkalmazás megvásárlásából)  
+    -Reklám (alkalmazás népszerűsítése, így több emberhez eljuthat)  
+    -Pénz (bevétel az alkalmazás megvásárlásából)  
 
 Üzleti folyamatok modellezése:  
-A leendő felhasználó értesül az alkalmazásról -> Megvásárolja és letölti -> Ha megfelelőnek találja, akkor használja.
+
+    A leendő felhasználó értesül az alkalmazásról -> Megvásárolja és letölti -> Ha megfelelőnek találja, akkor használja.
     
 
 
