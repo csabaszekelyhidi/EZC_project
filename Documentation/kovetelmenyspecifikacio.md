@@ -51,3 +51,33 @@ különböző kihívásokkal és egyre nehezedő pályákkal.
 ---
 ### 5. Igényelt üzleti folyamatok modellje
 
+ 
+	*	Üzleti szereplő és munkatárs elemzése:
+	
+		* Üzleti szereplők:
+		
+			* Felhasználók
+			* Tesztelők
+			
+		* Üzleti munkatárs:
+		
+			* Fejlesztők
+			* Csapatvezető
+			* Vezető
+
+	*	Üzleti folyamat elemzése:
+	
+		* Lehetőségek felmérése
+		* Alkalmazás hirdetése
+		* Könnyű és érthető használat
+		
+	*	Üzleti entitás elemzés:
+	
+		* Reklám
+		* Pénz
+	
+	*	Üzleti folyamatok modellezése:
+	
+		A felhasználó megveszi az alkalmazást -> Letölti -> Használja -> Ha tetszik neki, akkor visszajelzést küld
+
+
