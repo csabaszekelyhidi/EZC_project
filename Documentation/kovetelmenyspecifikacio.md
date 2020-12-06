@@ -34,9 +34,50 @@ különböző kihívásokkal és egyre nehezedő pályákkal.
 
 ---
 ### 4. Jelenlegi üzleti folyamatok modellje
-
-
+    
+Üzleti szereplők:   
+    -Felhasználók  
+    -Tesztelők  
+    -Fejlesztők  
+        
+Üzleti folyamatok modellje:   
+    1. Felhasználó megveszi/letölti az alkalmazást  
+    2. Elindítja az alkalmazást  
+    3. Játszik vele  
+    4. Eldönti, hogy testszettüe vagy nem neki az alkalmazás  
+    5. Ajánlja a többi kollégának  
+    6. Visszajelzést küld a fejlesztőknek  
 
 ---
 ### 5. Igényelt üzleti folyamatok modellje
+
+ 
+	*	Üzleti szereplő és munkatárs elemzése:
+	
+		* Üzleti szereplők:
+		
+			* Felhasználók
+			* Tesztelők
+			
+		* Üzleti munkatárs:
+		
+			* Fejlesztők
+			* Csapatvezető
+			* Vezető
+
+	*	Üzleti folyamat elemzése:
+	
+		* Lehetőségek felmérése
+		* Alkalmazás hirdetése
+		* Könnyű és érthető használat
+		
+	*	Üzleti entitás elemzés:
+	
+		* Reklám
+		* Pénz
+	
+	*	Üzleti folyamatok modellezése:
+	
+		A felhasználó megveszi az alkalmazást -> Letölti -> Használja -> Ha tetszik neki, akkor visszajelzést küld
+
 
