@@ -70,7 +70,14 @@ public class PlayView extends SurfaceView implements Runnable {
                 draw();
                 sleep();
             }
+            else {
+                isPlaying = false;
+            }
 
+        }
+        if ( isPlaying == false )
+        {
+            drawGameOver();
         }
 
     }
@@ -228,8 +235,8 @@ public class PlayView extends SurfaceView implements Runnable {
             //canvas.drawCircle(o2X, o2Y, 50, paint);
 
             paint.setTextSize(48f);
-            canvas.drawText("points: "+points,screenX - 400, 100, paint);
-            canvas.drawText("level: "+speed,200, 100, paint);
+            canvas.drawText("Pontszám: "+points,screenX - 400, 100, paint);
+            canvas.drawText("Szint: "+speed,200, 100, paint);
 
 
             //for score
@@ -262,6 +269,25 @@ public class PlayView extends SurfaceView implements Runnable {
             inAir_speed = (int) (12 + speed);
         }
         Log.d(NIMLOG,"NimLOG: goDown() called");
+    }
+    public void drawGameOver()
+    {
+        if(getHolder().getSurface().isValid())
+        {
+            canvas = getHolder().lockCanvas();
+
+            Bitmap GO = BitmapFactory.decodeResource(getResources(), R.drawable.gameover);
+            GO = Bitmap.createScaledBitmap(GO,GO.getWidth()/2,GO.getHeight()/2,false);
+            canvas.drawBitmap(GO, screenX/2 - GO.getWidth()/2, screenY/2 - GO.getHeight()/2 , paint);
+
+            paint.setTextSize(100f);
+            paint.setColor(Color.WHITE);
+            canvas.drawText(String.valueOf(points),screenX/2 - 30, screenY/ 2 + 75, paint);
+            canvas.drawText(String.valueOf(speed),screenX/2 - 30, screenY/ 2 + 196, paint);
+
+            getHolder().unlockCanvasAndPost(canvas);
+        }
+
     }
 
     private void sleep()
