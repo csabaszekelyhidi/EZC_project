@@ -35,13 +35,13 @@ különböző kihívásokkal és egyre nehezedő pályákkal.
 ---
 ### 4. Jelenlegi üzleti folyamatok modellje
     
-    Üzleti szereplők:
-        -Felhasználók
-        -Tesztelők
-        -Fejlesztők
-	
+Üzleti szereplők:
+    -Felhasználók
+    -Tesztelők
+    -Fejlesztők
+        
     Üzleti folyamatok modellje:
-        1.Felhasználó megveszi/letölti az alkalmazást 
+        1. Felhasználó megveszi/letölti az alkalmazást 
         2. Elindítja az alkalmazást 
         3. Játszik vele 
         4. Eldönti, hogy testszettüe vagy nem neki az alkalmazás 
