@@ -4,26 +4,26 @@
 
 Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | --- | --- | --- | --- |
-| 1 |  | Elvégzésre vár |  |
-| 2 |  | Elvégzésre vár |  |
-| 3 |  | Elvégzésre vár |  |
-| 4 |  | Elvégzésre vár |  |
-| 5 |  | Elvégzésre vár |  |
-| 6 |  | Elvégzésre vár |  |
-| 7 |  | Elvégzésre vár |  |
-| 8 |  | Elvégzésre vár |  |
-| 9 |  | Elvégzésre vár |  |
-| 10 |  | Elvégzésre vár |  |
-| 11 |  | Elvégzésre vár |  |
-| 12 |  | Elvégzésre vár |  |
-| 13 |  | Elvégzésre vár |  |
-| 14 |  | Elvégzésre vár |  |
-| 15 |  | Elvégzésre vár |  |
-| 16 |  | Elvégzésre vár |  |
-| 17 |  | Elvégzésre vár |  |
-| 18 |  | Elvégzésre vár |  |
-| 19 |  | Elvégzésre vár |  |
-| 20 |  | Elvégzésre vár |  |
+| 1 | A program elindul | Sikeres | Székelyhídi Csaba |
+| 2 | A menü megjelenik | Sikeres | Székelyhídi Csaba |
+| 3 | A játék futása elindul | Sikeres | Székelyhídi Csaba |
+| 4 | Karakter ugrás | Sikeres | Székelyhídi Csaba |
+| 5 | Karakter lefelé mozgás | Sikeres | Székelyhídi Csaba |
+| 6 | Pontok megjelenik | Sikeres | Székelyhídi Csaba |
+| 7 | Szint megjelenik | Sikeres | Székelyhídi Csaba |
+| 8 | Háttér megjelenik | Sikeres | Székelyhídi Csaba |
+| 9 | Háttér futása folyamatos | Sikeres | Székelyhídi Csaba |
+| 10 | Szikla akadály megjelenik | Sikeres | Székelyhídi Csaba |
+| 11 | Madár akadály megjelenik | Sikeres | Székelyhídi Csaba |
+| 12 | Szikla pozíció generálódik | Sikeres | Székelyhídi Csaba |
+| 13 | Madár pozíció generálódik | Sikeres | Székelyhídi Csaba |
+| 14 | Ütközés esetén játék vége | Sikeres | Székelyhídi Csaba |
+| 15 | Madár sebessége nagyobb | Sikeres | Székelyhídi Csaba |
+| 16 | Sebesség változik | Sikeres | Székelyhídi Csaba |
+| 17 | Dizájn szép ;) | Sikeres | Székelyhídi Csaba |
+| 18 | Szikla kép megjelenik | Sikeres | Székelyhídi Csaba |
+| 19 | Madár kép megjelenik | Sikeres | Székelyhídi Csaba |
+| 20 | Csirke kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 21 |  | Elvégzésre vár |  |
 | 22 |  | Elvégzésre vár |  |
 | 23 |  | Elvégzésre vár |  |
