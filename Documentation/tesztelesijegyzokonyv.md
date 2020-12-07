@@ -40,7 +40,7 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 34 | "Asd" névvel 5 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
 | 35 | "57th" névvel 111 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
 | 36 | "Iwannabefirst" névvel 1141 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 37 | "Hopeless" névvel 1115 pont insertelve az adatbázisba | Sikeres |  |
+| 37 | "Hopeless" névvel 1115 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
 | 38 | Adatbázis feltöltése adatokkal a törléshez | Sikeres |  |
 | 38 | Adatbázisban lévő adatok törlése | Sikeres |  |
 | 39 | Adatbázis feltöltése adatokkal a kilistázáshoz | Sikeres |  |
