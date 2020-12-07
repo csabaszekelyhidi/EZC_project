@@ -24,6 +24,7 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 18 | Szikla kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 19 | Madár kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 20 | Csirke kép megjelenik | Sikeres | Székelyhídi Csaba |
+
 | 21 | "Third" névvel 234 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
 | 22 | "Aasd" névvel 32 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
 | 23 | "324dd" névvel 12 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
