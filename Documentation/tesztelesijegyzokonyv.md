@@ -24,20 +24,25 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 18 | Szikla kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 19 | Madár kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 20 | Csirke kép megjelenik | Sikeres | Székelyhídi Csaba |
-
-| 21 | "Third" névvel 234 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 22 | "Aasd" névvel 32 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 23 | "324dd" névvel 12 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 24 | "Noname" névvel 10000 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 25 | "NameNo" névvel 465 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 26 | "More" névvel 212 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 27 | "Yep" névvel 36 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 28 | "Da" névvel 34 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 29 | "Asd" névvel 5 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 31 | "57th" névvel 111 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 32 | "Iwannabefirst" névvel 1141 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 33 | "Hopeless" névvel 1115 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 34 | Adatbázis adatok törlése | Sikeres | Nagy István Zoltán |
-| 35 | Adatbázis feltöltése adatokkal a kilistázáshoz | Sikeres | Nagy István Zoltán |
-| 36 | Adatbázisból való top 10 eredmény kilistázása | Sikeres | Nagy István Zoltán |
+| 21 | Adatbázis létrehozása | Sikeres | Nagy István Zoltán |
+| 22 | Adatbáziskapcsolat létrehozása | Sikeres | Nagy István Zoltán |
+| 23 | Adatbázissal történő kommunikáció | Sikeres | Nagy István Zoltán |
+| 24 | Adatok felvitele az adatbázisba | Sikeres | Nagy István Zoltán |
+| 25 | Adatbázisban lévő adatok törlése | Sikeres | Nagy István Zoltán |
+| 26 | "Third" névvel 234 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 27 | "Aasd" névvel 32 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 28 | "324dd" névvel 12 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 29 | "Noname" névvel 10000 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 30 | "NameNo" névvel 465 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 31 | "More" névvel 212 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 32 | "Yep" névvel 36 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 33 | "Da" névvel 34 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 34 | "Asd" névvel 5 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 35 | "57th" névvel 111 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 36 | "Iwannabefirst" névvel 1141 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 37 | "Hopeless" névvel 1115 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 38 | Adatbázis adatok törlése | Sikeres | Nagy István Zoltán |
+| 39 | Adatbázis feltöltése adatokkal a kilistázáshoz | Sikeres | Nagy István Zoltán |
+| 40 | Adatbázisból való top 10 eredmény kilistázása | Sikeres | Nagy István Zoltán |
+| 41 | Adatbáziskapcsolat bontása | Sikeres | Nagy István Zoltán |
 
