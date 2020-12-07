@@ -36,3 +36,4 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 30 | "NameNo" névvel 465 pont insertelve az adatbázisba |  |  |
 | 31 | "More" névvel 212 pont insertelve az adatbázisba |  |  |
 | 32 | "Yep" névvel 36 pont insertelve az adatbázisba |  |  |
+| 33 | "Da" névvel 34 pont insertelve az adatbázisba |  |  |
