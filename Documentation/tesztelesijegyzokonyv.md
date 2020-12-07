@@ -27,7 +27,7 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 21 | Adatbázis létrehozása | Sikeres | Nagy István Zoltán |
 | 22 | Adatbáziskapcsolat létrehozása | Sikeres | Nagy István Zoltán |
 | 23 | Adatbázissal történő kommunikáció | Sikeres | Nagy István Zoltán |
-| 24 | Adatok felvitele az adatbázisba | Sikeres |  |
+| 24 | Adatok felvitele az adatbázisba | Sikeres | Nagy István Zoltán |
 | 25 | Adatbázisban lévő adatok törlése | Sikeres |  |
 | 26 | "Third" névvel 234 pont insertelve az adatbázisba | Sikeres |  |
 | 27 | "Aasd" névvel 32 pont insertelve az adatbázisba | Sikeres |  |
