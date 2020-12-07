@@ -24,14 +24,18 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 18 | Szikla kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 19 | Madár kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 20 | Csirke kép megjelenik | Sikeres | Székelyhídi Csaba |
-| 21 |  | Elvégzésre vár |  |
-| 22 |  | Elvégzésre vár |  |
-| 23 |  | Elvégzésre vár |  |
-| 24 |  | Elvégzésre vár |  |
-| 25 |  | Elvégzésre vár |  |
-| 26 |  | Elvégzésre vár |  |
-| 27 |  | Elvégzésre vár |  |
-| 28 |  | Elvégzésre vár |  |
-| 29 |  | Elvégzésre vár |  |
-| 30 |  | Elvégzésre vár |  |
+| 21 | "Third" névvel 234 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 22 | "Aasd" névvel 32 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 23 | "324dd" névvel 12 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 24 | "Noname" névvel 10000 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 25 | "NameNo" névvel 465 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 26 | "More" névvel 212 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 27 | "Yep" névvel 36 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 28 | "Da" névvel 34 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 29 | "Asd" névvel 5 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 31 | "57th" névvel 111 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 32 | "Iwannabefirst" névvel 1141 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 33 | "Hopeless" névvel 1115 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 34 | Adatbázis adatok törlése | Sikeres | Nagy István Zoltán |
+| 35 | Adatbázis feltöltése adatokkal, majd adatok közül a legjobb 10 kilistázása | Sikeres | Nagy István Zoltán |
 
