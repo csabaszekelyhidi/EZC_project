@@ -30,3 +30,4 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 24 | Adatok felvitele az adatbázisba |  |  |
 | 25 | Adatbázisban lévő adatok törlése |  |  |
 | 26 | "Third" névvel 234 pont insertelve az adatbázisba |  |  |
+| 27 | "Aasd" névvel 32 pont insertelve az adatbázisba |  |  |
