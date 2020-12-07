@@ -24,6 +24,6 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 18 | Szikla kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 19 | Madár kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 20 | Csirke kép megjelenik | Sikeres | Székelyhídi Csaba |
-
+| 21 | Adatbázis létrehozása |  |  |
 
 
