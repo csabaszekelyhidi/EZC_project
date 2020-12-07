@@ -38,7 +38,7 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 32 | "Yep" névvel 36 pont insertelve az adatbázisba | Sikeres |  |
 | 33 | "Da" névvel 34 pont insertelve az adatbázisba | Sikeres |  |
 | 34 | "Asd" névvel 5 pont insertelve az adatbázisba | Sikeres |  |
-| 35 | "57th" névvel 111 pont insertelve az adatbázisba |  |  |
+| 35 | "57th" névvel 111 pont insertelve az adatbázisba | Sikeres |  |
 | 36 | "Iwannabefirst" névvel 1141 pont insertelve az adatbázisba |  |  |
 | 37 | "Hopeless" névvel 1115 pont insertelve az adatbázisba |  |  |
 | 38 | Adatbázis feltöltése adatokkal a törléshez |  |  |
