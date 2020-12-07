@@ -39,3 +39,4 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 33 | "Da" névvel 34 pont insertelve az adatbázisba |  |  |
 | 34 | "Asd" névvel 5 pont insertelve az adatbázisba |  |  |
 | 35 | "57th" névvel 111 pont insertelve az adatbázisba |  |  |
+| 36 | "Iwannabefirst" névvel 1141 pont insertelve az adatbázisba |  |  |
