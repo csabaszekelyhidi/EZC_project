@@ -29,4 +29,4 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 23 | Adatbázissal történő kommunikáció |  |  |
 | 24 | Adatok felvitele az adatbázisba |  |  |
 | 25 | Adatbázisban lévő adatok törlése |  |  |
-
+| 26 | "Third" névvel 234 pont insertelve az adatbázisba |  |  |
