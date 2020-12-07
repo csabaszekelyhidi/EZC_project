@@ -24,6 +24,8 @@ Napjainkban egyre többen használnak mobil okoseszközöket, a 2020-as pandémi
 ---
 ### 4. Teszt terv
 
+Az applikáció tesztelése 2 fázisra bontahtó fel. Az első fázis az fejlesztés azon szakasza, mikor még az applikáció nem került publikálásra, azokat valós felhasználók még nem tesztelik. Ebben a fázisban történik majd a junit tesztelés, illetve felkérünk majd valós személyeket is tesztelésre, akik az applikáció hibáin kívül, a felhasználói felületről is adhatnak visszajelzést. Az applikáció publikálására csak akkor kerülhet sor, ha az minden teszten sikeresen megfelelt. A második fázisban már a publikált alkalmazásról kérünk visszajelzéseket a felhasználóktól. Erre létrehozunk egy email címet, melyre minden visszajelzést szívesen várunk majd.
+
 ---
 ### 5. Telepítési terv
 
@@ -32,3 +34,4 @@ A felhasználó a játékot a Google Play Store-ból tudja majd telepíteni Andr
 ---
 ### 6. Karbantartási terv
 
+Az applikáció karbantantása rendszereses kiadott frissítésekkel történik, melyben megtalálhatóak lesznek mind az új funkciók, mind a felhasználók visszajelzései vagy tesztelés során felvetődött hibák javításai is. A felhasználók visszajelzéseihez külön emailt hozunk létre melyben jelezhetik javaslataikat, hiba észrevételeiket.
