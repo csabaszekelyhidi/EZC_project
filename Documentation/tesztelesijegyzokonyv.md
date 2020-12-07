@@ -42,7 +42,7 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 36 | "Iwannabefirst" névvel 1141 pont insertelve az adatbázisba | Sikeres |  |
 | 37 | "Hopeless" névvel 1115 pont insertelve az adatbázisba | Sikeres |  |
 | 38 | Adatbázis feltöltése adatokkal a törléshez | Sikeres |  |
-| 38 | Adatbázisban lévő adatok törlése |  |  |
+| 38 | Adatbázisban lévő adatok törlése | Sikeres |  |
 | 39 | Adatbázis feltöltése adatokkal a kilistázáshoz |  |  |
 | 40 | Adatbázisból való top 10 eredmény kilistázása |  |  |
 | 41 | Adatbáziskapcsolat bontása |  |  |
