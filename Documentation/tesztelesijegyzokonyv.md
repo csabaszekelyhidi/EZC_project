@@ -42,4 +42,25 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 36 | Szikla kép megjelenik | Sikeres | Szilágyi Ede |
 | 37 | Madár kép megjelenik | Sikeres | Szilágyi Ede |
 | 38 | Csirke kép megjelenik | Sikeres | Szilágyi Ede |
-
+| 39 | Adatbázis létrehozása | Sikeres | Nagy István Zoltán |
+| 40 | Adatbáziskapcsolat létrehozása | Sikeres | Nagy István Zoltán |
+| 41 | Adatbázissal történő kommunikáció | Sikeres | Nagy István Zoltán |
+| 42 | Adatok felvitele az adatbázisba | Sikeres | Nagy István Zoltán |
+| 43 | Adatbázisban lévő adatok törlése | Sikeres | Nagy István Zoltán |
+| 44 | "Third" névvel 234 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 45 | "Aasd" névvel 32 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 46 | "324dd" névvel 12 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 47 | "Noname" névvel 10000 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 48 | "NameNo" névvel 465 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 49 | "More" névvel 212 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 50 | "Yep" névvel 36 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 51 | "Da" névvel 34 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 52 | "Asd" névvel 5 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 53 | "57th" névvel 111 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 54 | "Iwannabefirst" névvel 1141 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 55 | "Hopeless" névvel 1115 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
+| 56 | Adatbázis feltöltése adatokkal a törléshez | Sikeres | Nagy István Zoltán |
+| 57 | Adatbázisban lévő adatok törlése | Sikeres | Nagy István Zoltán |
+| 58 | Adatbázis feltöltése adatokkal a kilistázáshoz | Sikeres | Nagy István Zoltán |
+| 59 | Adatbázisból való top 10 eredmény kilistázása | Sikeres | Nagy István Zoltán |
+| 61 | Adatbáziskapcsolat bontása | Sikeres | Nagy István Zoltán |
