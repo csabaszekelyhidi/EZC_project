@@ -42,7 +42,7 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 36 | "Iwannabefirst" névvel 1141 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
 | 37 | "Hopeless" névvel 1115 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
 | 38 | Adatbázis feltöltése adatokkal a törléshez | Sikeres | Nagy István Zoltán |
-| 38 | Adatbázisban lévő adatok törlése | Sikeres |  |
+| 38 | Adatbázisban lévő adatok törlése | Sikeres | Nagy István Zoltán |
 | 39 | Adatbázis feltöltése adatokkal a kilistázáshoz | Sikeres |  |
 | 40 | Adatbázisból való top 10 eredmény kilistázása | Sikeres |  |
 | 41 | Adatbáziskapcsolat bontása | Sikeres |  |
