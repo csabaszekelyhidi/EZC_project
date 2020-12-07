@@ -41,7 +41,7 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 35 | "57th" névvel 111 pont insertelve az adatbázisba | Sikeres |  |
 | 36 | "Iwannabefirst" névvel 1141 pont insertelve az adatbázisba | Sikeres |  |
 | 37 | "Hopeless" névvel 1115 pont insertelve az adatbázisba | Sikeres |  |
-| 38 | Adatbázis feltöltése adatokkal a törléshez |  |  |
+| 38 | Adatbázis feltöltése adatokkal a törléshez | Sikeres |  |
 | 38 | Adatbázisban lévő adatok törlése |  |  |
 | 39 | Adatbázis feltöltése adatokkal a kilistázáshoz |  |  |
 | 40 | Adatbázisból való top 10 eredmény kilistázása |  |  |
