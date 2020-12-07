@@ -28,4 +28,5 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 22 | Adatbáziskapcsolat létrehozása | Sikeres |  |
 | 23 | Adatbázissal történő kommunikáció |  |  |
 | 24 | Adatok felvitele az adatbázisba |  |  |
+| 25 | Adatbázisban lévő adatok törlése |  |  |
 
