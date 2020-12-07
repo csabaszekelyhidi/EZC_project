@@ -36,7 +36,7 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 30 | "NameNo" névvel 465 pont insertelve az adatbázisba | Sikeres |  |
 | 31 | "More" névvel 212 pont insertelve az adatbázisba | Sikeres |  |
 | 32 | "Yep" névvel 36 pont insertelve az adatbázisba | Sikeres |  |
-| 33 | "Da" névvel 34 pont insertelve az adatbázisba |  |  |
+| 33 | "Da" névvel 34 pont insertelve az adatbázisba | Sikeres |  |
 | 34 | "Asd" névvel 5 pont insertelve az adatbázisba |  |  |
 | 35 | "57th" névvel 111 pont insertelve az adatbázisba |  |  |
 | 36 | "Iwannabefirst" névvel 1141 pont insertelve az adatbázisba |  |  |
