@@ -27,4 +27,5 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 21 | Adatbázis létrehozása | Sikeres | Nagy István Zoltán |
 | 22 | Adatbáziskapcsolat létrehozása | Sikeres |  |
 | 23 | Adatbázissal történő kommunikáció |  |  |
+| 24 | Adatok felvitele az adatbázisba |  |  |
 
