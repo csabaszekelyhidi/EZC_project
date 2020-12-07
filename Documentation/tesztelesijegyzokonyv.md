@@ -32,7 +32,7 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 26 | "Third" névvel 234 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
 | 27 | "Aasd" névvel 32 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
 | 28 | "324dd" névvel 12 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
-| 29 | "Noname" névvel 10000 pont insertelve az adatbázisba | Sikeres |  |
+| 29 | "Noname" névvel 10000 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
 | 30 | "NameNo" névvel 465 pont insertelve az adatbázisba | Sikeres |  |
 | 31 | "More" névvel 212 pont insertelve az adatbázisba | Sikeres |  |
 | 32 | "Yep" névvel 36 pont insertelve az adatbázisba | Sikeres |  |
