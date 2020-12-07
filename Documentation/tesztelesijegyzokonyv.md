@@ -38,3 +38,4 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 32 | "Yep" névvel 36 pont insertelve az adatbázisba |  |  |
 | 33 | "Da" névvel 34 pont insertelve az adatbázisba |  |  |
 | 34 | "Asd" névvel 5 pont insertelve az adatbázisba |  |  |
+| 35 | "57th" névvel 111 pont insertelve az adatbázisba |  |  |
