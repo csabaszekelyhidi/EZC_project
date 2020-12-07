@@ -24,14 +24,22 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 18 | Szikla kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 19 | Madár kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 20 | Csirke kép megjelenik | Sikeres | Székelyhídi Csaba |
-| 21 |  | Elvégzésre vár |  |
-| 22 |  | Elvégzésre vár |  |
-| 23 |  | Elvégzésre vár |  |
-| 24 |  | Elvégzésre vár |  |
-| 25 |  | Elvégzésre vár |  |
-| 26 |  | Elvégzésre vár |  |
-| 27 |  | Elvégzésre vár |  |
-| 28 |  | Elvégzésre vár |  |
-| 29 |  | Elvégzésre vár |  |
-| 30 |  | Elvégzésre vár |  |
+| 21 | A program elindul | Sikeres | Szilágyi Ede |
+| 22 | A menü megjelenik | Sikeres | Szilágyi Ede |
+| 23 | A játék futása elindul | Sikeres | Szilágyi Ede |
+| 24 | Karakter ugrás | Sikeres | Szilágyi Ede |
+| 25 | Karakter lefelé mozgás | Sikeres | Szilágyi Ede |
+| 26 | Pontok megjelenik | Sikeres | Szilágyi Ede |
+| 27 | Szint megjelenik | Sikeres | Szilágyi Ede |
+| 28 | Háttér megjelenik | Sikeres | Szilágyi Ede |
+| 29 | Szikla akadály megjelenik | Sikeres | Szilágyi Ede |
+| 30 | Madár akadály megjelenik | Sikeres | Szilágyi Ede |
+| 31 | Szikla pozíció generálódik | Sikeres | Szilágyi Ede |
+| 32 | Madár pozíció generálódik | Sikeres | Szilágyi Ede |
+| 33 | Ütközés esetén játék vége | Sikeres | Szilágyi Ede |
+| 34 | Madár sebessége nagyobb | Sikeres | Szilágyi Ede |
+| 35 | Sebesség változik | Sikeres | Szilágyi Ede |
+| 36 | Szikla kép megjelenik | Sikeres | Szilágyi Ede |
+| 37 | Madár kép megjelenik | Sikeres | Szilágyi Ede |
+| 38 | Csirke kép megjelenik | Sikeres | Szilágyi Ede |
 
