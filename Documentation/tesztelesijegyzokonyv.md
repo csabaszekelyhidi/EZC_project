@@ -39,5 +39,5 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 33 | "Hopeless" névvel 1115 pont insertelve az adatbázisba | Sikeres | Nagy István Zoltán |
 | 34 | Adatbázis adatok törlése | Sikeres | Nagy István Zoltán |
 | 35 | Adatbázis feltöltése adatokkal a kilistázáshoz | Sikeres | Nagy István Zoltán |
-| 35 | Adatbázisból való top 10 eredmény kilistázása | Sikeres | Nagy István Zoltán |
+| 36 | Adatbázisból való top 10 eredmény kilistázása | Sikeres | Nagy István Zoltán |
 
