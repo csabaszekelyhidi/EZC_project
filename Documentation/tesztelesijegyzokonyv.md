@@ -45,4 +45,4 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 38 | Adatbázisban lévő adatok törlése | Sikeres | Nagy István Zoltán |
 | 39 | Adatbázis feltöltése adatokkal a kilistázáshoz | Sikeres | Nagy István Zoltán |
 | 40 | Adatbázisból való top 10 eredmény kilistázása | Sikeres | Nagy István Zoltán |
-| 41 | Adatbáziskapcsolat bontása | Sikeres |  |
+| 41 | Adatbáziskapcsolat bontása | Sikeres | Nagy István Zoltán |
