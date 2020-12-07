@@ -25,7 +25,7 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 19 | Madár kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 20 | Csirke kép megjelenik | Sikeres | Székelyhídi Csaba |
 | 21 | Adatbázis létrehozása | Sikeres | Nagy István Zoltán |
-| 22 | Adatbáziskapcsolat létrehozása | Sikeres |  |
+| 22 | Adatbáziskapcsolat létrehozása | Sikeres | Nagy István Zoltán |
 | 23 | Adatbázissal történő kommunikáció | Sikeres |  |
 | 24 | Adatok felvitele az adatbázisba | Sikeres |  |
 | 25 | Adatbázisban lévő adatok törlése | Sikeres |  |
