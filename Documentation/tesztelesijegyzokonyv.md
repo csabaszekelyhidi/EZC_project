@@ -44,5 +44,5 @@ Sorszám | Elvárt teljesítmény | Teszt sikeressége | Tesztelő |
 | 38 | Adatbázis feltöltése adatokkal a törléshez | Sikeres |  |
 | 38 | Adatbázisban lévő adatok törlése | Sikeres |  |
 | 39 | Adatbázis feltöltése adatokkal a kilistázáshoz | Sikeres |  |
-| 40 | Adatbázisból való top 10 eredmény kilistázása |  |  |
+| 40 | Adatbázisból való top 10 eredmény kilistázása | Sikeres |  |
 | 41 | Adatbáziskapcsolat bontása |  |  |
