@@ -331,4 +331,24 @@ public class PlayView extends SurfaceView implements Runnable {
 
         return false;
     }
+
+    public void draw_Game_Over()
+    {
+        if(getHolder().getSurface().isValid())
+        {
+            canvas = getHolder().lockCanvas();
+
+            Bitmap GO = BitmapFactory.decodeResource(getResources(), R.drawable.gameover);
+            GO = Bitmap.createScaledBitmap(GO,GO.getWidth()/2,GO.getHeight()/2,false);
+            canvas.drawBitmap(GO, screenX/2 - GO.getWidth()/2, screenY/2 - GO.getHeight()/2 , paint);
+
+            paint.setTextSize(100f);
+            paint.setColor(Color.WHITE);
+            canvas.drawText(String.valueOf(points),screenX/2 - 30, screenY/ 2 + 75, paint);
+            canvas.drawText(String.valueOf(speed),screenX/2 - 30, screenY/ 2 + 196, paint);
+
+            getHolder().unlockCanvasAndPost(canvas);
+        }
+
+    }
 }
