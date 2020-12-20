@@ -134,6 +134,26 @@ public class PlayActivity extends AppCompatActivity implements GestureDetector.O
         return true;
     }
 
+    //@Override
+    protected void on_Pause() {
+        super.onPause();
+        playView.pause();
+    }
+
+    //@Override
+    protected void on_Resume() {
+        super.onResume();
+        playView.resume();
+    }
+
+    //@Override
+    public boolean on_Touch_Event(MotionEvent event){
+        if (this.mDetector.onTouchEvent(event)) {
+            return true;
+        }
+        return super.onTouchEvent(event);
+    }
+
 
 
 }
